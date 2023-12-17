@@ -1,0 +1,47 @@
+.chat__field {
+    border-top: 1px solid var(--gray);
+    padding-top: 1rem;
+}
+
+.chat__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.chat__input {
+    flex-grow: 1;
+    border: none;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.chat__emoji {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    color: var(--gray);
+}
+
+.emojiPicker {
+    position: absolute;
+    right: 10%;
+    bottom: 100%;
+}
+
+.chat__btn {
+    background-color: rgba(0, 119, 255, 0.795);
+    color: var(--white);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-weight: 700;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.message {
+    max-width: 400px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.message span {
+    text-align: right;
+}
+
+.host__message {
+    background-color: var(--gray);
+
+    margin-left: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+
+
+.friend__message {
+    justify-content: flex-end;
+    background-color: aliceblue;
+    max-width: 400px;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.host__message span {
+    float: right;
+}
+
+.friend__message span {
+    float: right;
+}

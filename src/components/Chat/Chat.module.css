@@ -1,0 +1,58 @@
+.dashboard__main {
+    grid-column: 4 / span 12;
+    background-color: var(--white);
+    border-left: 1px solid #9d9d9d5e;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.main__header {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: .5rem;
+}
+
+.header__back {
+    display: none;
+}
+
+.header__user {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__user span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.user__ava {
+    max-width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.main__chat {
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard__main {
+        width: 100%;
+    }
+
+    .header__back {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .hidden {
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+}

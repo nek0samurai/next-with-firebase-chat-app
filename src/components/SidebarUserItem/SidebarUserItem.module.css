@@ -1,0 +1,17 @@
+.user__ava {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: beige;
+}
+
+.user__name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.list_item__block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
