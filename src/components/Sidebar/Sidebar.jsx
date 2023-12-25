@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
 import cls from './Sidebar.module.css';
-
+import { db } from '@/helpers/constants/constants';
 import useUsers from '@/hooks/useUsers';
 
 import SidebarUserItem from '../SidebarUserItem/SidebarUserItem';
@@ -10,8 +10,9 @@ import { auth } from '@/helpers/constants/constants';
 
 import { PiSignOutBold } from 'react-icons/pi';
 import Image from 'next/image';
+import { collection, getDocs } from 'firebase/firestore';
 
-const Sidebar = ({ userData, isChat }) => {
+const Sidebar = ({ userData, isChat, messages, chat, chatId }) => {
 	const users = useUsers(userData);
 
 	const handleSignOut = async () => {
@@ -19,7 +20,7 @@ const Sidebar = ({ userData, isChat }) => {
 	};
 
 	return (
-		<aside className={isChat ? cls.hidden : cls.sidebar}>
+		<aside className={`${cls.sidebar} ${isChat ? cls.hidden : cls.active}`}>
 			<header className={cls.sidebar__header}>
 				<div className={cls.header__user}>
 					<Image

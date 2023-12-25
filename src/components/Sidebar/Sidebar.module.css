@@ -6,7 +6,13 @@
     background-color: #fff;
     height: 100%;
     padding: 1rem;
+    border-right: 1px solid var(--gray);
 }
+
+
+
+
+
 
 .sidebar__header {
     padding: 5px;
@@ -57,19 +63,24 @@
 .users__list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .users__list-item {}
 
+.active {
+    width: 100%;
+}
+
+.hidden {
+    opacity: 1;
+}
+
 
 @media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-    }
-
     .hidden {
         width: 0;
-        visibility: hidden;
+        padding: 0;
     }
 }

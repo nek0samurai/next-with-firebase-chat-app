@@ -1,0 +1,25 @@
+.dragAndDrop {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, -55%);
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    background-color: rgba(240, 248, 255, 0.323);
+    border: 2px dashed #000;
+
+}
+
+.dragAndDrop.dragActive {
+    opacity: 1;
+
+}
+
+.dragAndDrop.dragInactive {
+    opacity: 0;
+}
