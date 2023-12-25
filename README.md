@@ -1,6 +1,6 @@
 ## Chat app with Next.js and Firebase 
 
-![Иллюстрация к проекту](https://github.com/nek0samurai/next-with-firebase-chat-app/blob/main/chat-screen-1.jpg)
+![Иллюстрация к проекту](https://github.com/nek0samurai/next-with-firebase-chat-app/blob/main/chat-screen-1.png)
 
 __Технологии:__
 - Next
