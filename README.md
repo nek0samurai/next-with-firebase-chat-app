@@ -7,3 +7,5 @@ __Технологии:__
 - Firebase + react-firebase-hooks
 - Emoji-picker-react
 
+![Иллюстрация к проекту](https://github.com/nek0samurai/next-with-firebase-chat-app/blob/main/chat-screen-2.png)
+![Иллюстрация к проекту](https://github.com/nek0samurai/next-with-firebase-chat-app/blob/main/chat-screen-3.png)
